@@ -230,11 +230,13 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  overflow: hidden;
 }
 .ui-section__project {
   position: relative;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 .ui-section__project:after {
   content: '';
@@ -244,6 +246,23 @@ textarea {
   bottom: 0;
   left: 0;
   background-color: rgba(0,0,0,0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 45px;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.ui-section__project:hover:after {
+  content: 'Click to preview';
+  background-color: rgba(0,0,0,0.65);
 }
 .ui-section__frame {
   width: 100%;
@@ -287,6 +306,9 @@ textarea {
   margin-left: 12px;
   font-size: 24px;
 }
+.ui-section__actions a {
+  margin-right: 18px;
+}
 .ui-section__option {
   position: absolute;
   bottom: 60px;
@@ -294,8 +316,6 @@ textarea {
   z-index: 100;
   text-align: right;
 }
-.ui-section__preview,
-.ui-section__source,
 .ui-section__close {
   text-decoration: none !important;
   border-width: 0;
@@ -315,8 +335,6 @@ textarea {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.ui-section__preview:hover,
-.ui-section__source:hover,
 .ui-section__close:hover {
   background-color: #333;
   color: #fff !important;

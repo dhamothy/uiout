@@ -14,11 +14,13 @@
 		}
 		&col{
 			flex: 1;
+			overflow: hidden;
 		}
 		&project{
-			position: relative;			
+			position: relative;
 			height: 100%;
 			overflow: hidden;
+			cursor: pointer;
 
 			&:after{//don't remove or iframe body will scroll
 				content: '';
@@ -28,6 +30,18 @@
 				bottom: 0;
 				left: 0;
 				background-color: rgba(0,0,0,.3);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: $size_h1;
+				color: $color_white;
+				transition: .2s;				
+			}
+			&:hover{
+				&:after{
+					content: 'Click to preview';
+					background-color: rgba(0,0,0,.65);
+				}
 			}
 		}
 		&frame{
@@ -71,6 +85,11 @@
 			margin-left: 12px;
 			font-size: $size_xl;
 		}
+		&actions{
+			a{
+				margin-right: 18px;
+			}
+		}
 		&option{
 			position: absolute;
 			bottom: 60px;
@@ -78,8 +97,6 @@
 			z-index: 100;
 			text-align: right;
 		}
-		&preview,
-		&source,
 		&close{
 			text-decoration: none!important;
 			border-width: 0;
