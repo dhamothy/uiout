@@ -36,6 +36,7 @@ a {
   color: $link_color;
   text-decoration: none;
   border-bottom: 1px dotted;
+  transition: .2s;
 
     // Remove the outline on focused links when they are also active or hovered
     // in all browsers (opinionated).
@@ -43,6 +44,7 @@ a {
     &:active,
     &:hover {
       color: $link_hover_color;
+      border-bottom-style: solid;
     }
 }
 

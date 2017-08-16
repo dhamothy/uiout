@@ -1,28 +1,126 @@
-.{$pre}-{$section}{	
-	
+.{$pre}-{$section}{
+
 	&__{
 		&row{
 			display: flex;
 			min-height: 600px;
 			height: 100vh;
+
+			+mq(md){
+				flex-direction: column-reverse;
+			}
 		}
 		&col{
 			flex: 1;
 		}
-		&figure{
+		&project{
+			position: relative;
+			z-index: 10;
+			height: 100%;
 
+			&:after{//don't remove or iframe body will scroll
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0,0,0,.3);
+			}
+		}
+		&frame{
+			width: 100%;
+			height: 100%;
+			position: relative;
+
+			&--open{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 900;
+			}
 		}
 		&content{
-			padding: 90px;
-		}
-		&project{
-			font-size: $size_xl;
-			pointer-events: none;
-			opacity: .3;
-			
+			position: relative;
+			padding: 45px 30px;
+
 			+mq(gt-md){
-				font-size: 90px;
+				padding: 90px;
 			}
+		}
+		&title{
+			line-height: 1.2;
+		}
+		&count{
+			font-size: $size_h2;
+			line-height: 1;
+			pointer-events: none;
+			opacity: .2;
+			margin-bottom: 30px;
+
+			+mq(gt-md){
+				font-size: 120px;
+				margin-bottom: 60px;
+			}
+		}
+		&version{
+			margin-left: 12px;
+			font-size: $size_xl;
+		}
+		&option{
+			position: absolute;
+			bottom: 60px;
+			right: 60px;
+			z-index: 100;
+			text-align: right;
+		}
+		&preview,
+		&picked,
+		&close{
+			text-decoration: none!important;
+			border-width: 0;
+			background-color: $color_white;
+			color: $color_base;
+			padding: 0 30px;
+			height: 60px;
+			line-height: @height;
+			display: inline-block;
+			margin-left: 18px;
+			margin-top: 18px;
+			text-align: center;
+			min-width: 180px;
+			border-radius: 1px;
+			box-shadow: 0 2px 5px rgba(0,0,0,.2);
+			cursor: pointer;
+			transition: .2s;
+
+			&:hover{
+				background-color: $color_base;
+				color: $color_white!important;
+			}
+		}
+		&close{
+			position: fixed;
+			top: 30px;
+			right: 30px;
+			z-index: 1000;
+			display: none;
+
+			&--open{
+				display: inline-block;
+			}
+		}
+		//color
+		&muted{
+			color: $color_muted;
+		}
+	}
+	&--{
+		&invert{
+			background-color: $color_black;
+			color: $color_white;
 		}
 	}
 }
