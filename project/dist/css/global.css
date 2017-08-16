@@ -1,0 +1,51 @@
+:root{
+	/*colors*/
+	--color-black: #000;
+	--color-white: #fff;
+	--color-base: #222;
+	--color-muted: #999;
+	/*font-size*/
+	--size-xs: 10px;
+	--size-sm: 12px;
+	--size-st: 14px;	
+	--size-md: 16px;
+	--size-lg: 24px;
+	--size-xl: 33px;
+	/*font-weight*/
+	--weight-light: 300;
+	--weight-normal: 500;
+	--weight-bold: 600;
+	--weight-bolder: 700;
+	/*font-family*/
+	--sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+	--serif: Cambria,"Times New Roman",Times,serif;	
+	--monospace: Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline-width: 0!important;
+}
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+body{	
+	color: var(--color-base);
+	background-color: var(--color-white);
+	font-family: var(--sans-serif);
+	font-size: var(--size-st);
+	line-height: 1.5;	
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: currentColor;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+@import url("mdi.css");

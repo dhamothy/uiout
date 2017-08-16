@@ -1,0 +1,28 @@
+.{$pre}-{$section}{	
+	
+	&__{
+		&row{
+			display: flex;
+			min-height: 600px;
+			height: 100vh;
+		}
+		&col{
+			flex: 1;
+		}
+		&figure{
+
+		}
+		&content{
+			padding: 90px;
+		}
+		&project{
+			font-size: $size_xl;
+			pointer-events: none;
+			opacity: .3;
+			
+			+mq(gt-md){
+				font-size: 90px;
+			}
+		}
+	}
+}
