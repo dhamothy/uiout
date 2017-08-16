@@ -208,6 +208,9 @@ textarea {
   overflow: auto;
   resize: vertical;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .ui-section__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,7 +233,6 @@ textarea {
 }
 .ui-section__project {
   position: relative;
-  z-index: 10;
   height: 100%;
 }
 .ui-section__project:after {

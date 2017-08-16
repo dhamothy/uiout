@@ -4,6 +4,7 @@ $(document).ready(function(){
 		var _parent = $(this).parents('[data-preview-project="true"]')[0];
 		$(_parent).find('[data-preview-frame="true"]').addClass('ui-section__frame--open');
 		$(_parent).find('[data-preview-close="true"]').addClass('ui-section__close--open');
+		$('body').addClass('overflow-hidden');
 	});
 
 	//close preview
@@ -11,5 +12,6 @@ $(document).ready(function(){
 		var _parent = $(this).parents('[data-preview-project="true"]')[0];
 		$(_parent).find('[data-preview-frame="true"]').removeClass('ui-section__frame--open');
 		$(_parent).find('[data-preview-close="true"]').removeClass('ui-section__close--open');
+		$('body').removeClass('overflow-hidden');
 	});
 });
