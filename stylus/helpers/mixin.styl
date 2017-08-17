@@ -44,12 +44,13 @@ button(){
     cursor: pointer;
     transition: .2s;
     position: relative;
-    background-color: $color_white;
-    color: $color_base;
-    
+    background-color: $color_base;
+    color: $color_white;
+    font-weight: $weight_normal;
+
     &:hover{
-        background-color: $color_base;
-        color: $color_white!important;
+        background-color: $color_white;
+        color: $color_base!important;
     }
 }
 
@@ -63,7 +64,7 @@ mq($point) {
     $sm = 800px;
     $md = 1000px;
     $lg = 1200px;
-    
+
     if $point == xs {
         @media (max-width: $xs - 1) {
             {block}
