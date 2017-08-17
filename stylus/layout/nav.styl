@@ -1,15 +1,24 @@
-.{$pre}-floater{
+.{$pre}-{$nav}{
 	position: fixed;
 	bottom: 30px;
-	right: 30px;
+	left: 30px;
+	
+	+mq(gt-md){
+		bottom: 45px;
+		left: 45px;
+	}
 	
 	&__{
-		&svg{
+		&brand{
 			width: 60px;
 			height: @width;
 			display: inline-block;
+			vertical-align: bottom;
+			margin-right: 15px;
+		}
+		&item{
+			button();
+			margin-right: 15px;
 		}
 	}
-}
-.{$pre}-{$nav}{
 }

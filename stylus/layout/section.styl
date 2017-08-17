@@ -4,12 +4,11 @@
 .{$pre}-{$section}{
 	&__{
 		&row{
-			display: flex;
-			min-height: 600px;
-			height: 100vh;
-
-			+mq(md){
-				flex-direction: column-reverse;
+			
+			+mq(gt-md){
+				display: flex;
+				min-height: 600px;
+				height: 100vh;
 			}
 		}
 		&col{
@@ -36,7 +35,7 @@
 				font-size: $size_h1;
 				color: $color_white;
 				text-shadow: 1px 2px 3px rgba(#fff,.4);
-				transition: .2s;				
+				transition: .2s;
 			}
 			&:hover{
 				&:after{
@@ -46,9 +45,10 @@
 			}
 		}
 		&frame{
+			position: relative;
 			width: 100%;
 			height: 100%;
-			position: relative;
+			min-height: 360px;
 
 			&--open{
 				position: fixed;
@@ -61,10 +61,11 @@
 		}
 		&content{
 			position: relative;
-			padding: 45px 30px;
+			padding: 60px 30px;
 
 			+mq(gt-md){
-				padding: 90px;
+			// 	padding: 90px;
+				padding-left: 45px;
 			}
 		}
 		&title{
@@ -74,11 +75,10 @@
 			font-size: $size_h2;
 			line-height: 1;
 			pointer-events: none;
-			opacity: .3;
+			color: $color_muted;
 			margin-bottom: 30px;
 
 			+mq(gt-md){
-				font-size: 120px;
 				margin-bottom: 60px;
 			}
 		}
@@ -87,8 +87,11 @@
 			font-size: $size_xl;
 		}
 		&actions{
+			& ~ &{
+				margin-top: 45px;
+			}
 			a{
-				margin-right: 18px;
+				margin-right: 15px;
 			}
 		}
 		&option{
@@ -98,29 +101,17 @@
 			z-index: 100;
 			text-align: right;
 		}
+		&source{
+			button();
+		}
 		&close{
-			text-decoration: none!important;
-			border-width: 0;
-			background-color: $color_white;
-			color: $color_base;
-			padding: 0 30px;
-			height: 60px;
-			line-height: @height;
-			display: inline-block;
-			margin-left: 18px;
-			margin-top: 18px;
-			text-align: center;
-			min-width: 150px;
-			border-radius: 1px;
-			box-shadow: 0 2px 5px rgba(0,0,0,.2);
-			cursor: pointer;
-			transition: .2s;
-			position: relative;
+			button();
+			position: fixed;
+			top: 30px;
+			right: 30px;
+			z-index: 1000;
+			display: none;
 
-			&:hover{
-				background-color: $color_base;
-				color: $color_white!important;
-			}
 			&:after{
 				content: 'or press ESC'
 				position: absolute;
@@ -131,14 +122,6 @@
 				pointer-events: none;
 				line-height: 1;
 			}
-		}
-		&close{
-			position: fixed;
-			top: 30px;
-			right: 30px;
-			z-index: 1000;
-			display: none;
-
 			&--open{
 				display: inline-block;
 			}
