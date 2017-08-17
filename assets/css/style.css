@@ -285,6 +285,11 @@ textarea {
 .ui-section__title {
   line-height: 1.2;
 }
+@media (max-width: 999px) {
+  .ui-section__title {
+    font-size: 32px;
+  }
+}
 .ui-section__count {
   font-size: 32px;
   line-height: 1;
@@ -400,6 +405,12 @@ textarea {
   display: inline-block;
   vertical-align: bottom;
   margin-right: 15px;
+  border-width: 0;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+.ui-nav__brand svg {
+  width: 100%;
+  height: 100%;
 }
 .ui-nav__item {
   text-decoration: none !important;
