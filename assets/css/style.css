@@ -496,11 +496,13 @@ textarea {
     border-width: 6px;
   }
 }
-.ui-header__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%;
+@media (min-width: 1000px) {
+  .ui-header__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100%;
+  }
 }
 .ui-header__col {
   -webkit-box-flex: 1;

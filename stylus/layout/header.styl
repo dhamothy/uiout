@@ -28,8 +28,10 @@
 			}
 		}		
 		&row{
-			display: flex;
-			min-height: 100%;
+			+mq(gt-md){
+				display: flex;
+				min-height: 100%;
+			}
 		}
 		&col{
 			flex: 1;
