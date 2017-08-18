@@ -296,7 +296,7 @@ textarea {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 900;
+  z-index: 5000;
 }
 .ui-section__content {
   position: relative;
@@ -386,7 +386,7 @@ textarea {
   position: fixed;
   top: 30px;
   right: 30px;
-  z-index: 1000;
+  z-index: 5100;
   display: none;
 }
 .ui-section__close:hover {
@@ -471,7 +471,7 @@ textarea {
   position: fixed;
   bottom: 30px;
   left: 30px;
-  z-index: 9000;
+  z-index: 4000;
 }
 @media (min-width: 1000px) {
   .ui-header__nav {
@@ -485,7 +485,7 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 8000;
+  z-index: 3000;
   border: 3px solid currentColor;
   background-color: #fff;
   overflow-y: auto;
