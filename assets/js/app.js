@@ -13,4 +13,10 @@ $(document).ready(function(){
 		$('[data-preview-close="true"]').removeClass('ui-section__close--open');
 		$('body').removeClass('overflow-hidden');
 	});
+
+	//header toggle
+	$('[data-header-trigger="true"]').click(function(){
+		$('[data-header-toggle="true"]').toggleClass('ui-header--open');
+		$('body').toggleClass('overflow-hidden');
+	});
 });

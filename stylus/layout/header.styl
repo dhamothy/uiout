@@ -1,0 +1,80 @@
+.{$pre}-{$header}{
+	&__{
+		&nav{
+			position: fixed;
+			bottom: 30px;
+			left: 30px;
+			z-index: $nav_zindex;
+
+			+mq(gt-md){
+				bottom: 45px;
+				left: 45px;
+			}
+		}
+		&main{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: $header_zindex;
+			border: 3px solid currentColor;
+			background-color: $color_white;
+			overflow-y: auto;
+			display: none;
+
+			+mq(gt-md){
+				border-width: 6px;
+			}
+		}		
+		&row{
+			display: flex;
+			min-height: 100%;
+		}
+		&col{
+			flex: 1;
+		}
+		&content{
+			padding: 45px 30px 120px;
+
+			+mq(gt-md){
+				padding-left: 45px;
+				padding-right: @padding-left;
+			}
+		}
+		&title{
+			font-size: $size_h2;
+			// text-transform: uppercase;
+		}
+		&disp{
+			font-size: $size_xl;
+			color: $color_muted;
+			margin-bottom: 12px;
+		}
+		&invert{
+			background-color: $color_black;
+			color: $color_white;
+		}
+	}
+	&--{
+		&open{
+
+			& ^[0]__main{
+				display: block;
+			}
+			.{$pre}-{$nav}{
+				&__{					
+					&logo,
+					&menu,
+					&item{
+						display: none!important;
+					}
+					&close,
+					&help{
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}

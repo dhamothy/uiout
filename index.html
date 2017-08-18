@@ -19,7 +19,7 @@
                             <div class="ui-section__content">
                                 <div class="ui-section__count">
                                     <span>#01</span>
-                                    <span class="ui-section__version">v0.1</span>
+                                    <span class="ui-section__version">v1.0</span>
                                 </div>
                                 <h1 class="ui-section__title">Captico image gallery</h1>
                                 <p>Unique layout with nice colors</p>
@@ -46,7 +46,7 @@
                             <div class="ui-section__content">
                                 <div class="ui-section__count">
                                     <span>#02</span>
-                                    <span class="ui-section__version">v0.1</span>
+                                    <span class="ui-section__version">v1.0</span>
                                 </div>
                                 <h1 class="ui-section__title">Sports web design</h1>
                                 <p>Unique layout with nice colors</p>
@@ -73,11 +73,11 @@
                             <div class="ui-section__content">
                                 <div class="ui-section__count">
                                     <span>#03</span>
-                                    <span class="ui-section__version">v0.1</span>
+                                    <span class="ui-section__version">v1.0</span>
                                 </div>
                                 <h1 class="ui-section__title">Music App</h1>
                                 <p>Unique layout with nice colors</p>
-                                <p class="ui-section__muted">#MobileApp #MusicPlayer</p>
+                                <p class="ui-section__muted">#MusicPlayer #MobileApp</p>
                                 <p class="ui-section__actions">
                                     <a class="ui-section__" data-preview-open="true">Preview</a>
                                     <a class="ui-section__reference" target="_blank" href="http://ios.uplabs.com/posts/music-app-2148e6ba-ed6f-4ce9-95a7-0b3c7b51a51a">Reference</a>
@@ -96,10 +96,52 @@
                 </section>
                 <div class="ui-section__close" data-preview-close="true">Close</div>
             </div>
-            <div class="ui-nav">
-                <a class="ui-nav__brand"><svg><use xlink:href="#brand" /></svg></a>
-                <button class="ui-nav__item">Previous</button>
-                <button class="ui-nav__item">Next</button>
+            <div class="ui-header" data-header-toggle="true">
+                <div class="ui-header__nav">
+                    <div class="ui-nav">
+                        <a class="ui-nav__brand" data-header-trigger="true">
+                            <svg class="ui-nav__logo"><use xlink:href="#logo" /></svg>
+                            <svg class="ui-nav__menu"><use xlink:href="#menu" /></svg>
+                            <svg class="ui-nav__close"><use xlink:href="#close" /></svg>
+                        </a>
+                        <small class="ui-nav__help">or press ESC</small>
+                        <button class="ui-nav__item">Previous</button>
+                        <button class="ui-nav__item">Next</button>
+                    </div>
+                </div>
+                <div class="ui-header__main">
+                    <div class="ui-header__row">
+                        <div class="ui-header__col">
+                            <div class="ui-header__content">
+                                <p class="ui-header__title">UIout <sup class="ui-beta">BETA</sup> v1.0 </p>
+                                <h2 class="ui-header__disp">Open source</h2>
+                                <br>
+                                <p class="ui-header__disp">
+                                    Contributors<br>
+                                    <a target="_blank" href="https://github.com/dhamothy">@dhamu</a> <small>Designer & Front-end developer</small><br>
+                                </p>
+                                <br>
+                                <p class="ui-header__disp">
+                                    Collaborators<br>
+                                    <a target="_blank" href="https://github.com/karthikeyanRED">@karthi</a> <small>Full stack developer</small><br>
+                                </p>
+                                <br>
+                                <p class="ui-header__disp">
+                                    Let me know your thoughts <a>Twitter</a>
+                                </p>
+                                <p class="ui-header__disp">
+                                    Join our project <a>Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ui-header__col ui-header__invert">
+                            <div class="ui-header__content">
+                                <p class="ui-header__title">Upcoming projects</p>
+                                <p class="ui-header__disp">&mdash; UIout Kit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="assets/js/jquery.min.js"></script>
@@ -107,8 +149,8 @@
         <div class="ui-unwrap">
             <!-- svg -->
             <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                <symbol id="brand" viewBox="0 0 240 240">
-                    <title>brand</title>
+                <symbol id="logo" viewBox="0 0 240 240">
+                    <title>logo</title>
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Group-Copy-7">
                             <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="0" y="0" width="240" height="240"></rect>
@@ -118,6 +160,14 @@
                             <path d="M140.519531,34.3828125 L120.132812,34.3828125 L120.132812,98.53125 C120.398439,110.882874 113.691475,117.102864 100.011719,117.191406 C94.9205475,117.191406 90.7369955,115.597672 87.4609375,112.410156 C84.0520663,109.311182 82.3033859,104.375034 82.2148438,97.6015625 L82.2148438,34.3828125 L61.7617188,34.3828125 L61.7617188,98.9296875 C61.7617188,108.757862 64.3072662,116.660126 69.3984375,122.636719 C71.6562613,124.894543 74.1575384,126.798169 76.9023438,128.347656 C79.514336,129.985685 82.1926946,131.247391 84.9375,132.132812 C90.5599239,133.682299 95.7174245,134.457031 100.410156,134.457031 C126.618621,134.722658 139.988279,122.481895 140.519531,97.734375 L140.519531,34.3828125 Z M158.914062,132 L179.300781,132 L179.300781,34.3828125 L158.914062,34.3828125 L158.914062,132 Z" id="UI" fill="#333333"></path>
                         </g>
                     </g>
+                </symbol>
+                <symbol id="menu" viewBox="0 0 24 24">
+                    <title>menu</title>
+                    <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </symbol>
+                <symbol id="close" viewBox="0 0 24 24">
+                    <title>close</title>
+                    <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
                 </symbol>
             </svg>
         </div>
