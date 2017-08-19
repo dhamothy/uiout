@@ -370,6 +370,11 @@ textarea {
   background-color: #fff;
   color: #333 !important;
 }
+.ui-section__source[disabled] {
+  cursor: not-allowed;
+  background-color: #d6d6d6 !important;
+  color: #999 !important;
+}
 .ui-section__close {
   text-decoration: none !important;
   border-width: 0;
@@ -396,6 +401,11 @@ textarea {
 .ui-section__close:hover {
   background-color: #fff;
   color: #333 !important;
+}
+.ui-section__close[disabled] {
+  cursor: not-allowed;
+  background-color: #d6d6d6 !important;
+  color: #999 !important;
 }
 .ui-section__close:after {
   content: 'or press ESC';
@@ -472,6 +482,11 @@ textarea {
 .ui-nav__item:hover {
   background-color: #fff;
   color: #333 !important;
+}
+.ui-nav__item[disabled] {
+  cursor: not-allowed;
+  background-color: #d6d6d6 !important;
+  color: #999 !important;
 }
 .ui-nav__item svg {
   width: 36px;

@@ -52,6 +52,11 @@ button(){
         background-color: $color_white;
         color: $color_base!important;
     }
+    &[disabled]{
+        cursor: not-allowed;
+        background-color: lighten($color_base,80%)!important;
+        color: $color_muted!important;
+    }
 }
 
 //------------------------------------------------------------------------------
