@@ -5,10 +5,14 @@
 //  color
 //------------------------------------------------------------------------------
 // global
-$color_white                   	: #ffffff;    //white
-$color_black                   	: #000000;    //black
-$color_primary                 	: #266ff9;    //black
-$color_stroke					: #cccccc;	  //gray
+$color_white                   	: #ffffff;  //white
+$color_black                   	: #000000;  //black
+$color_primary                 	: #0055ff;  //blue
+$color_info						: #00aaff; 	//lightblue
+$color_success					: #009955;	//green
+$color_danger					: #ee5500;	//red
+$color_warn						: #ee9900;	//warn
+$color_stroke					: #cccccc;	//gray
 
 // text and fill
 //base
@@ -17,7 +21,7 @@ $base_text                    	: #333333;
 $base_stroke					: $color_stroke;
 
 //muted
-$muted_text                   	: #999999;
+$muted_text                   	: #999999;	//gray
 
 //  hyperlink
 $link_text                    	: currentColor;
@@ -97,6 +101,18 @@ $button_base_fill				: $color_white;
 
 //primary
 $button_primary_fill			: $color_primary;
+
+//info
+$button_info_fill				: $color_info;
+
+//success
+$button_success_fill			: $color_success;
+
+//danger
+$button_danger_fill				: $color_danger;
+
+//warn
+$button_warn_fill				: $color_warn;
 
 //disabled
 $button_disabled_text			: $disabled_text;
