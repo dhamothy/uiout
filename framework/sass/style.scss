@@ -1,7 +1,9 @@
 //sass --watch sass/style.scss:assets/css/style.css --style compressed
 
-@import "helpers/__helpers",
+@import "helper/__helper",
 
-		"base/__base"
+		"base/__base",
+
+		"component/__component"
 
 ;

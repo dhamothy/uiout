@@ -1,10 +1,13 @@
+//==============================================================================
+//	GLOBAL
+//==============================================================================
 //------------------------------------------------------------------------------
 //  color
 //------------------------------------------------------------------------------
 // global
 $color_white                   	: #ffffff;    //white
 $color_black                   	: #000000;    //black
-$color_brand                   	: #222222;    //black
+$color_primary                 	: #266ff9;    //black
 $color_stroke					: #cccccc;	  //gray
 
 // text and fill
@@ -21,7 +24,7 @@ $link_text                    	: currentColor;
 $link_hover_text              	: currentColor;
 
 $disabled_fill					: lighten($color_black,90%);
-$disabled_text					: lighten($color_black,80%);
+$disabled_text					: lighten($color_black,72%);
 
 //------------------------------------------------------------------------------
 //  font-family
@@ -66,7 +69,7 @@ $shadow_dp1						: 0 3px 5px rgba(0,0,0,.2),0 0 1px rgba(0,0,0,.2);
 //------------------------------------------------------------------------------
 $base_family                   	: $family_sans;
 $base_weight	             	: $weight_normal;
-$base_size                     	: $size_md;
+$base_size                     	: $size_st;
 $base_lineheight              	: 1.4;
 
 //------------------------------------------------------------------------------
@@ -75,4 +78,29 @@ $base_lineheight              	: 1.4;
 $container_inner				: 1000px;
 $container_gutter			 	: 30px;
 $container_width				: $container_inner + ($container_gutter * 2);
+
+//==============================================================================
+//	MODULE
+//==============================================================================
+//------------------------------------------------------------------------------
+//	button
+//------------------------------------------------------------------------------
+$button_shadow					: $shadow_dp1;
+$button_gutter					: 21px;
+$button_height					: 36px;
+$button_radius					: 2px;
+$button_size					: $size_st;
+
+//base color
+$button_base_text				: $base_text;
+$button_base_fill				: $color_white;
+
+//primary
+$button_primary_fill			: $color_primary;
+
+//disabled
+$button_disabled_text			: $disabled_text;
+$button_disabled_fill			: $disabled_fill;
+
+
 
