@@ -1,6 +1,6 @@
 #{$prefix}-#{$button}{
 	@include button();
-	@include button-disabled();
+	// @include button-disabled();
 	
 	&--{
 		&base{

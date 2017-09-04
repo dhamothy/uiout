@@ -12,6 +12,11 @@
     line-height: $button_height;
     border-radius: $button_radius;
     box-shadow: $button_shadow;
+
+    &[disabled]{
+        cursor: not-allowed;
+        box-shadow: $button_disabled_shadow;
+    }
 }
 
 @mixin button-state(
@@ -27,6 +32,12 @@
     &:focus{
         background-color: darken($button_fill,8%);
     }
+    &[disabled]{
+        // cursor: not-allowed;
+        background-color: lighten($button_fill,25%);
+        color: lighten($button_text,50%);
+        // box-shadow: $button_disabled_shadow;
+    }
 }
 
 @mixin button-disabled(
@@ -34,8 +45,11 @@
     $button_disabled_text: $button_disabled_text
     ){
     &[disabled]{
-        cursor: not-allowed;
-        background-color: $button_disabled_fill!important;
+        // cursor: not-allowed;
+        // @if (lightness($button_disabled_fill)>50){
+            background-color: $button_disabled_fill!important;
+        // }
+
         color: $button_disabled_text!important;
         box-shadow: none;
     }
