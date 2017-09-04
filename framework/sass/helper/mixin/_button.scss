@@ -15,7 +15,7 @@
 
     &[disabled]{
         cursor: not-allowed;
-        box-shadow: $button_disabled_shadow;
+        box-shadow: $button_state_shadow;
     }
 }
 
@@ -28,15 +28,17 @@
 
     &:hover{
         background-color: darken($button_fill,5%);
+        box-shadow: $button_state_shadow;
     }
     &:focus{
         background-color: darken($button_fill,8%);
+        box-shadow: $button_state_shadow;
     }
     &[disabled]{
         // cursor: not-allowed;
-        background-color: lighten($button_fill,25%);
+        background-color: lighten($button_fill,30%);
         color: lighten($button_text,50%);
-        // box-shadow: $button_disabled_shadow;
+        // box-shadow: $button_state_shadow;
     }
 }
 
