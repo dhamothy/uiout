@@ -59,7 +59,7 @@
 				z-index: $section_frame_zindex;
 			}
 		}
-		&content{
+		&main{
 			position: relative;
 			padding: 60px 30px 120px;
 
@@ -68,8 +68,14 @@
 				padding-left: 45px;
 			}
 		}
+		&header{
+			margin-bottom: 45px;
+		}
 		&title{
+			margin-bottom: 0;
 			line-height: 1.2;
+			display: inline-block;
+			margin-right: 12px;
 			
 			+mq(md){
 				font-size: $size_h2;
@@ -80,23 +86,24 @@
 			line-height: 1;
 			pointer-events: none;
 			color: $color_muted;
-			margin-bottom: 30px;
+			margin-right: 12px;
 
 			+mq(gt-md){
 				margin-bottom: 60px;
 			}
 		}
 		&version{
-			margin-left: 12px;
+			// margin-left: 12px;
+			color: $color_muted;
 			font-size: $size_xl;
 		}
-		&actions{
-			& ~ &{
-				margin-top: 45px;
-			}
+		&actions{			
 			a{
 				margin-right: 15px;
 			}
+		}
+		&footer{
+			margin-top: 45px;
 		}
 		&option{
 			position: absolute;

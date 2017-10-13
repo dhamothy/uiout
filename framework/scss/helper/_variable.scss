@@ -1,0 +1,119 @@
+//==============================================================================
+//	GLOBAL
+//==============================================================================
+//------------------------------------------------------------------------------
+// 	color
+//------------------------------------------------------------------------------
+$color_white                   	: #fff; //white
+$color_black                   	: #000; //black
+$color_primary                 	: #05f; //blue
+$color_info						: #0af;	//light blue
+$color_success					: #393;	//green
+$color_danger					: #e50;	//red
+$color_warn						: #e90;	//warn
+
+//text and fill
+//base
+$base_text                    	: #333;
+$base_fill                    	: $color_white;
+$base_stroke					: #ccc;
+
+//muted
+$muted_text                   	: #999;	//gray 
+
+//hyperlink
+$link_text                    	: currentColor;
+$link_hover_text              	: currentColor;
+
+$disabled_text					: lighten($color_black,72%);
+$disabled_fill					: lighten($color_black,90%);
+
+//------------------------------------------------------------------------------
+//  font-family
+//------------------------------------------------------------------------------
+$family_sans          			: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$family_serif               	: Georgia, Cambria, Times New Roman, Times, serif;
+$family_mono	            	: Menlo, Monaco, Consolas, Courier New, monospace;
+
+//------------------------------------------------------------------------------
+//  font-weight
+//------------------------------------------------------------------------------
+$weight_light					: 300;
+$weight_normal					: 400;
+$weight_bold					: 600;
+$weight_bolder					: 700;
+
+//------------------------------------------------------------------------------
+//  font-size
+//------------------------------------------------------------------------------
+$size_xs                     	: 10px;
+$size_sm                     	: 12px;
+$size_st                     	: 14px;
+$size_md                    	: 16px;
+$size_lg                     	: 18px;
+$size_xl                     	: 24px;
+
+//heading
+$size_h1                     	: 45px;
+$size_h2                     	: 32px;
+$size_h3                     	: $size_xl;
+$size_h4                     	: $size_lg;
+$size_h5                     	: $size_md;
+$size_h6                     	: $size_st;
+
+//------------------------------------------------------------------------------
+//	shadow
+//------------------------------------------------------------------------------
+$shadow_dp1						: 0 2px 4px rgba(0,0,0,.2),0 0 1px rgba(0,0,0,.2);	//button
+
+//------------------------------------------------------------------------------
+//  base
+//------------------------------------------------------------------------------
+$base_family                   	: $family_sans;
+$base_weight	             	: $weight_normal;
+$base_size                     	: $size_st;
+$base_lineheight              	: 1.4;
+
+//------------------------------------------------------------------------------
+//	container
+//------------------------------------------------------------------------------
+$container_inner				: 1000px;
+$container_gutter			 	: 30px;
+$container_width				: $container_inner + ($container_gutter * 2);
+
+//==============================================================================
+//	MODULE
+//==============================================================================
+//------------------------------------------------------------------------------
+//	button
+//------------------------------------------------------------------------------
+$button_shadow					: $shadow_dp1;
+$button_gutter					: 21px;
+$button_height					: 36px;
+$button_radius					: 2px;
+$button_size					: $size_st;
+
+//base color
+$button_base_text				: $base_text;
+$button_base_fill				: $color_white;
+
+//primary
+$button_primary_fill			: $color_primary;
+
+//info
+$button_info_fill				: $color_info;
+
+//success
+$button_success_fill			: $color_success;
+
+//danger
+$button_danger_fill				: $color_danger;
+
+//warn
+$button_warn_fill				: $color_warn;
+
+//disabled
+$button_disabled_text			: $disabled_text;
+$button_disabled_fill			: $disabled_fill;
+
+$button_state_shadow			: 0 1px 2px rgba(0,0,0,.2), 0 0 1px rgba(0,0,0,.2);

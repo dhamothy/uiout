@@ -136,7 +136,7 @@ body{
 .ma-list__item{
 	display: flex;
 	align-items: center;
-	padding: 18px 30px 18px 18px;
+	padding: 18px;
 	text-decoration: none!important;
 	color: currentColor!important;
 }
@@ -171,6 +171,10 @@ body{
 }
 .ma-list__action{
 	margin-left: 18px;
+	width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
 }
 .ma-list__action .mdi{
 	font-size: 24px;
