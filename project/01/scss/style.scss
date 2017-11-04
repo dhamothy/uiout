@@ -1,10 +1,10 @@
-//sass --watch scss/style.scss:assets/css/style.css --style compressed
+//sass --watch --no-cache scss/style.scss:assets/css/style.css --style compressed
 
 @import "../../../framework/scss/framework";
 
 
-@import "variable",
+@import "helper/__helper",
 
-		'layout'
+		'layout/__layout'
 
 ;

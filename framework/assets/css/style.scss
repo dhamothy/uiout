@@ -1,0 +1,176 @@
+//sass --watch --no-cache assets/css/style.scss:assets/css/style.css --style compressed
+//============================================================================================
+// VARIABLE
+//============================================================================================
+//--------------------------------------------------------------------------------------------
+// color
+//--------------------------------------------------------------------------------------------
+//brand
+$color_primary:   				#d00;
+
+//base
+$base_text: 					#333;
+
+//accent
+$accent_text: 					#666;
+$accent_fill: 					#f5f5f5;
+
+//muted
+$muted_text: 					#999;
+$muted_fill: 					#e0e0e0;
+
+//--------------------------------------------------------------------------------------------
+// layout
+//--------------------------------------------------------------------------------------------
+$aside_gutter:					15px;
+
+//============================================================================================
+// SELECTOR
+//============================================================================================
+$prefix:						".fw-";
+
+
+//============================================================================================
+// CSS RULES
+//============================================================================================
+code{
+	background-color: $muted_fill;
+	color: $base_text;
+}
+#{$prefix}wrapper{
+
+	&__{
+		&container{
+			min-height: 100vh;
+			display: flex;
+		}
+		&aside{
+			background: $accent_fill;
+			flex-basis: 180px;
+		}
+		&main{
+			flex: 1;
+		}
+		&header{
+
+		}
+		&nav{
+			padding: 9px 0 30px;
+		}
+	}
+}
+#{$prefix}brand{
+	padding: 15px $aside_gutter;
+	display: block;
+	font-size: 18px;
+
+	&__{
+		&logo{
+			width: 30px;
+			vertical-align: middle;
+			margin-right: 9px;
+		}
+	}
+}
+#{$prefix}nav{
+	&__{
+		&title{
+			padding: 0 $aside_gutter;
+			text-transform: uppercase;
+			font-size: 10px;
+			font-weight: bold;
+			margin-bottom: 6px;
+		}
+		&list{
+			margin-bottom: 30px;
+		}
+		&item{
+			display: block;
+			color: $accent_text;
+			padding: 6px $aside_gutter 6px ($aside_gutter + 12px);
+			border-right: 3px solid transparent;
+
+			&[navActive]{
+				color: $base_text;
+				border-right-color: $color_primary;
+				background-color: $muted_fill;
+			}
+		}
+	}
+	&--{
+		&right{
+			padding-top: 15px;
+			
+			#{$prefix}nav{
+				&__{
+					&item{
+						border-right-width: 0;
+						border-left: 3px solid transparent;
+
+						&[navActive]{
+							color: $base_text;
+							border-left-color: $color_primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#{$prefix}section{
+	&s{
+		padding-left: 30px;
+		padding-right: 30px;
+
+		@media (min-width: 1000px){
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+	&{
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		@media (min-width: 1000px){
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+	}
+	&__{
+		&header{
+			margin-bottom: 30px;
+			padding-left: 12px;
+			border-left: 3px solid $color_primary;
+		}
+		&title{
+			font-size: 24px;
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
+		&disp{
+			color: $accent_text;
+			max-width: 600px;
+		}
+		&demo{
+			& ~ &{
+				margin-top: 30px;
+			}
+		}
+		&heading{
+			font-size: 18px;
+			margin-bottom: 9px;
+		}
+		&caption{
+			color: $accent_text;
+		}
+		&code{
+			margin-top: 15px;
+			white-space: pre-line;
+			background-color: $accent_fill;
+			padding: 9px 15px;
+			border-radius: 2px;
+			max-height: 80vh;
+			overflow: auto;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+#{$prefix}-#{$nav}{
+	&__{
+		#{$nav-item}{
+			display: inline-block;
+			font-weight: var(--weight-bold);
+			padding: 0 24px;
+			color: var(--color-muted);
+			border-bottom: 2px solid transparent;
+
+			&--active{
+				color: var(--color-base);
+				border-bottom-color: currentColor;
+			}
+		}
+	}
+}

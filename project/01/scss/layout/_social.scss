@@ -1,0 +1,27 @@
+#{$prefix}-#{$social}{
+	text-align: right;
+
+	&__{
+		&#{$social-icon}{
+			width: 42px;
+			height: 42px;
+			line-height: 42px;
+			display: inline-block;
+			border-radius: 50%;
+			background-color: var(--color-white);
+			text-align: center;	
+			margin: 0 15px;
+			box-shadow: 0 26px 17px 4px rgba(0,0,0,.07);
+			position: relative;
+			top: 0;
+			transition: .2s;
+			
+			&:hover{
+				top: -5px;
+			}
+			.mdi{
+				font-size: 18px;
+			}			
+		}
+	}
+}

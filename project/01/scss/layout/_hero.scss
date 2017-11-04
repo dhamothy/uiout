@@ -1,0 +1,29 @@
+#{$prefix}-#{$hero}{
+	&__{
+		&#{$hero-row}{
+			display: flex;
+			position: relative;
+		}
+		&#{$hero-column}{
+			display: flex;
+			flex: 1;
+			align-items: stretch;
+			height: 720px;
+		}
+		&#{$hero-intro},
+		&#{$hero-social}{
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+		&#{$hero-intro}{
+			background-color: #32c8d5;
+			padding: 60px;
+		}
+		&#{$hero-social}{
+			background-color: #f5bd3d;
+			padding: 60px 90px 75px;
+		}
+	}
+}

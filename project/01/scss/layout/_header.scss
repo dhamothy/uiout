@@ -1,0 +1,21 @@
+ #{$prefix}-#{$header}{
+	&__{
+
+		&#{$header-container}{
+			display: flex;
+			align-items: center;
+			line-height: 90px;
+		}
+		&#{$header-brand}{
+			margin-right: 60px;
+		}
+		&#{$header-logo}{
+			font-weight: var(--weight-bolder);
+			font-size: 21px;
+			display: inline-block;
+		}
+		&#{$header-nav}{
+
+		}
+	}	
+}
