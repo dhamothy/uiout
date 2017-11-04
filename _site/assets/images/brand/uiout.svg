@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>uiout 2 copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="uiout-2-copy-3">
+            <rect id="Rectangle-3" fill="#000000" x="0" y="0" width="150" height="150"></rect>
+            <g id="Group" transform="translate(21.000000, 19.000000)" fill="#FFFFFF">
+                <g id="ui">
+                    <g id="u">
+                        <rect id="Rectangle" x="0" y="0" width="12" height="60" rx="2"></rect>
+                        <rect id="Rectangle-Copy" x="36" y="0" width="12" height="60" rx="2"></rect>
+                        <rect id="Rectangle-2" x="0" y="48" width="48" height="12" rx="2"></rect>
+                    </g>
+                    <g id="i" transform="translate(60.000000, 0.000000)">
+                        <rect id="Rectangle" x="18" y="0" width="12" height="60" rx="2"></rect>
+                        <rect id="Rectangle-2" x="0" y="48" width="48" height="12" rx="2"></rect>
+                        <rect id="Rectangle-2-Copy-2" x="0" y="0" width="48" height="12" rx="2"></rect>
+                    </g>
+                </g>
+                <g id="out" transform="translate(0.000000, 72.000000)">
+                    <g id="o">
+                        <rect id="Rectangle" x="0" y="0" width="9" height="40" rx="2"></rect>
+                        <rect id="Rectangle-Copy-2" x="23" y="0" width="9" height="40" rx="2"></rect>
+                        <rect id="Rectangle-2" x="0" y="31" width="32" height="9" rx="2"></rect>
+                        <rect id="Rectangle-2-Copy" x="0" y="0" width="32" height="9" rx="2"></rect>
+                    </g>
+                    <g id="t" transform="translate(76.000000, 0.000000)">
+                        <rect id="Rectangle" x="12" y="0" width="9" height="40" rx="2"></rect>
+                        <rect id="Rectangle-2-Copy" x="0" y="0" width="32" height="9" rx="2"></rect>
+                    </g>
+                    <g id="u" transform="translate(38.000000, 0.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="9" height="40" rx="2"></rect>
+                        <rect id="Rectangle-Copy-2" x="23" y="0" width="9" height="40" rx="2"></rect>
+                        <rect id="Rectangle-2" x="0" y="31" width="32" height="9" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

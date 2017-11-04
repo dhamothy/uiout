@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+    	<title>CSS Framework | UIout Kit</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="CSS Framework">
+        <link rel="icon" href="/assets/images/brand/uiout-fav.png" type="image/png">
+        <link rel="apple-touch-icon" href="/assets/images/brand/uiout-fav.png">
+        <link rel="stylesheet" type="text/css" href="assets/css/ui-fw.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="fw-wrapper">
+            <div class="fw-wrapper__container">
+                <aside class="fw-wrapper__aside">
+                    <div class="fw-wrapper__header">
+                        <a class="fw-brand"><img src="/assets/images/brand/uiout.svg" class="fw-brand__logo">Framework</a>
+                    </div>
+                    <div class="fw-wrapper__nav">
+                        <nav class="fw-nav">
+                            <div class="fw-nav__list">
+                                <div class="fw-nav__title">Module</div>
+                                <a class="fw-nav__item">Text box</a>
+                                <a class="fw-nav__item" navActive>Button</a>
+                                <a class="fw-nav__item">Radio</a>
+                                <a class="fw-nav__item">Checkbox</a>
+                            </div>
+                            <div class="fw-nav__list">
+                                <div class="fw-nav__title">Collection</div>
+                                <a class="fw-nav__item">Segment</a>
+                                <a class="fw-nav__item">Paper</a>
+                                <a class="fw-nav__item">Modal</a>
+                            </div>
+                        </nav>
+                    </div>
+                </aside>
+                <main class="fw-wrapper__main">
+                    <div class="fw-sections">
+                        <section class="fw-section">
+                            <header class="fw-section__header">
+                                <h1 class="fw-section__title">Button</h1>
+                                <p class="fw-section__disp">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            </header>
+                            <div class="fw-section__content">
+                                <div class="fw-section__demo" fw-demo="true">
+                                    <h2 class="fw-section__heading" fw-demo-trigger="true">Normal button</h2>
+                                    <div class="fw-section__preview" fw-demo-preview="true"><button class="ui-btn ui-btn--base">Base</button>
+                                        <button class="ui-btn ui-btn--primary">Primary</button>
+                                        <button class="ui-btn ui-btn--info">Info</button>
+                                        <button class="ui-btn ui-btn--success">Success</button>
+                                        <button class="ui-btn ui-btn--danger">Danger</button>
+                                        <button class="ui-btn ui-btn--warn">Warn</button>
+                                    </div>
+                                    <pre class="fw-section__code" fw-demo-code="true"></pre>
+                                </div>
+                                <div class="fw-section__demo" fw-demo="true">
+                                    <h2 class="fw-section__heading" fw-demo-trigger="true">Disabled button</h2>
+                                    <p class="fw-section__caption">Attribute <code>disabled</code> will do.</p>
+                                    <div class="fw-section__preview" fw-demo-preview="true"><button disabled="disabled" class="ui-btn ui-btn--base">Base</button>
+                                        <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button>
+                                        <button disabled="disabled" class="ui-btn ui-btn--info">Info</button>
+                                        <button disabled="disabled" class="ui-btn ui-btn--success">Success</button>
+                                        <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button>
+                                        <button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button>
+                                    </div>
+                                    <pre class="fw-section__code" fw-demo-code="true"></pre>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <aside class="fw-wrapper__aside">
+                    <div class="fw-wrapper__nav">
+                        <nav class="fw-nav fw-nav--right">
+                            <div class="fw-nav__list">
+                                <div class="fw-nav__title">Button</div>
+                                <a class="fw-nav__item">Normal</a>
+                                <a class="fw-nav__item" navActive>Disabled</a>
+                            </div>
+                        </nav>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- script -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

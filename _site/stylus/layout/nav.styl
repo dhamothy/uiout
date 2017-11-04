@@ -1,0 +1,51 @@
+.{$pre}-{$nav}{	
+	
+	&__{		
+		&logo{
+
+		}
+		&menu,
+		&close,
+		&help{
+			display: none;
+		}
+		&brand{
+			width: 60px;
+			height: @width;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 15px;
+			border-width: 0;
+			box-shadow: $shadow_dp1;
+			background-color: $color_base;
+			color: $color_white;
+			
+			svg{
+				width: 100%;
+				height: @width;
+			}
+			&:hover{
+				background-color: $color_white;
+				color: $color_base;
+			
+				& ^[1]logo{
+					display: none;
+				}
+				& ^[1]menu{
+					display: block;
+				}
+			}
+		}
+		&item{
+			button();
+			min-width: 60px;
+			padding: 0;
+			vertical-align: middle;
+			margin-right: 15px;			
+			
+			svg{
+				width: 36px;
+			}
+		}		
+	}
+}
