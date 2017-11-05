@@ -22,7 +22,7 @@ $muted_fill: 					#e0e0e0;
 //--------------------------------------------------------------------------------------------
 // layout
 //--------------------------------------------------------------------------------------------
-$aside_gutter:					15px;
+$header_gutter:					15px;
 
 //============================================================================================
 // SELECTOR
@@ -44,6 +44,7 @@ code{
 			min-height: 100vh;
 			display: flex;
 		}
+		&header,
 		&aside{
 			background: $accent_fill;
 			flex-basis: 180px;
@@ -60,13 +61,14 @@ code{
 	}
 }
 #{$prefix}brand{
-	padding: 15px $aside_gutter;
+	padding: 15px $header_gutter;
 	display: block;
 	font-size: 18px;
 
 	&__{
 		&logo{
 			width: 30px;
+			height: 30px;
 			vertical-align: middle;
 			margin-right: 9px;
 		}
@@ -75,7 +77,7 @@ code{
 #{$prefix}nav{
 	&__{
 		&title{
-			padding: 0 $aside_gutter;
+			padding: 0 $header_gutter;
 			text-transform: uppercase;
 			font-size: 10px;
 			font-weight: bold;
@@ -87,7 +89,7 @@ code{
 		&item{
 			display: block;
 			color: $accent_text;
-			padding: 6px $aside_gutter 6px ($aside_gutter + 12px);
+			padding: 6px $header_gutter 6px ($header_gutter + 12px);
 			border-right: 3px solid transparent;
 
 			&[navActive]{
@@ -100,7 +102,7 @@ code{
 	&--{
 		&right{
 			padding-top: 15px;
-			
+
 			#{$prefix}nav{
 				&__{
 					&item{

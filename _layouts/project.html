@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	{% include project/head.html %}
+	<body>
+		<div class="uo-wrapper">
+    		<div class="uo-sections">
+	    		{{ content }}
+	    		{% include project/section.html %}
+	    	</div>
+	    	{% include project/header.html %}
+	    </div>
+	    <div class="uo-unwrap">
+    		<!-- svg -->
+    		{% include _svg.html %}
+    		<!-- js -->
+	    	{% include project/js.html %}
+		</div>
+	</body>
+</html>

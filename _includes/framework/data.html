@@ -1,0 +1,12 @@
+{% assign framework = {{include.fw}} %}
+{% for fw in site.data[framework] %}
+
+{% for fw_type in fw.type %}
+{% endfor %}
+{% endfor %}
+
+
+
+{% include framework/section.html fw="input" %}
+
+{% include framework/section.html fw="button" %}

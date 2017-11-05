@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	{% include framework/head.html %}
+	<body>
+		<div class="fw-wrapper">
+    		<div class="fw-wrapper__container">
+    			{% include framework/header.html %}
+				<main class="fw-wrapper__main">
+				    <div class="fw-sections">
+	    			{{ content }}
+	    			{% include framework/section.html %}
+		    		</div>
+				</main>
+				{% include framework/aside.html %}
+	    	</div>
+	    </div>
+	    <div class="fw-unwrap">
+	    	{% include _svg.html %}
+	    	{% include framework/js.html %}
+		</div>
+	</body>
+</html>

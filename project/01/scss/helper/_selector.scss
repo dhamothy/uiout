@@ -1,4 +1,4 @@
-$prefix						: ".ca";
+$prefix						: ".ca-";
 
 //============================================================
 //	LAYOUT
@@ -6,14 +6,14 @@ $prefix						: ".ca";
 //------------------------------------------------------------
 //	wrapper
 //------------------------------------------------------------
-$wrapper					: "wrapper";
+$wrapper					: $prefix+"wrapper";
 $wrapper-container			: "container";
 $wrapper-main				: "main";
 
 //------------------------------------------------------------
 //	header
 //------------------------------------------------------------
-$header						: "header";
+$header						: $prefix+"header";
 $header-container			: "container";
 $header-brand				: "brand";
 $header-logo				: "logo";
@@ -22,13 +22,13 @@ $header-nav					: "nav";
 //------------------------------------------------------------
 //	nav
 //------------------------------------------------------------
-$nav						: "nav";
+$nav						: $prefix+"nav";
 $nav-item					: "item";
 
 //------------------------------------------------------------
 //	hero
 //------------------------------------------------------------
-$hero						: "hero";
+$hero						: $prefix+"hero";
 $hero-row					: "row";
 $hero-column				: "col";
 $hero-intro					: "intro";
@@ -37,7 +37,7 @@ $hero-social				: "social";
 //------------------------------------------------------------
 //	intro
 //------------------------------------------------------------
-$intro						: "intro";
+$intro						: $prefix+"intro";
 $intro-title				: "title";
 $intro-caption				: "caption";
 $intro-form					: "form";
@@ -48,7 +48,7 @@ $intro-button				: "button";
 //------------------------------------------------------------
 //	social
 //------------------------------------------------------------
-$social						: "social";
+$social						: $prefix+"social";
 $social-icon				: "icon";
 
 

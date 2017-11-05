@@ -1,0 +1,18 @@
+<header class="fw-wrapper__header">
+    <div class="fw-wrapper__brand">
+        <a class="fw-brand"><svg class="fw-brand__logo"><use xlink:href="#logo" /></svg>Framework</a>
+    </div>
+    <div class="fw-wrapper__nav">
+        <nav class="fw-nav">
+            {% for fd in site.data.fw.comp %}
+            {% assign fwd = {{fd}} %}            
+            <div class="fw-nav__list">
+                <div class="fw-nav__title">Module</div>
+                {% for fw in site.data[fwd] %}
+                <a class="fw-nav__item">{{ fw.title }}</a>
+                {% endfor %}    
+            </div>
+            {% endfor %}            
+        </nav>
+    </div>
+</header>

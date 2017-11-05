@@ -1,7 +1,7 @@
 .overflow-hidden{
 	overflow: hidden;
 }
-.{$pre}-{$section}{
+{$section}{
 	&__{
 		&row{
 
@@ -14,6 +14,12 @@
 		&col{
 			flex: 1;
 			overflow: hidden;
+			
+			& ~ &{
+				+mq(gt-lg){
+					flex: 1.8;
+				}
+			}
 		}
 		&project{
 			position: relative;

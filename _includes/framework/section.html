@@ -1,0 +1,20 @@
+{% for fd in site.data.fw.comp %}
+{% assign fwd = {{fd}} %}
+{% for fw in site.data[fwd] %}
+<section class="fw-section">
+    <header class="fw-section__header">
+        <h1 class="fw-section__title">{{ fw.title }}</h1>
+        <p class="fw-section__disp">{{ fw.disp }}</p>
+    </header>
+    <div class="fw-section__content">
+        {% for fw_type in fw.type %}
+        <div class="fw-section__demo" fw-demo="true">
+            <h2 class="fw-section__heading" fw-demo-trigger="true">{{ fw_type.name }}</h2>
+            <div class="fw-section__preview" fw-demo-preview="true">{{ fw_type.html }}</div>
+            <div class="fw-section__code" fw-demo-code="true"></div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endfor %}
+{% endfor %}

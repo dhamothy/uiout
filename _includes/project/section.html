@@ -1,0 +1,33 @@
+{% for project in site.data.project reversed %}
+{% capture thecycle %}{% cycle 'uo-section--invert', '' %}{% endcapture %}
+<section class="uo-section {{ thecycle }}" data-preview-project="true" >
+    <div class="uo-section__row">
+        <div class="uo-section__col">
+            <div class="uo-section__main">
+                <header class="uo-section__header">
+                    <span class="uo-section__count">#{{ project.count }}</span>
+                    <h1 class="uo-section__title">{{ project.title }}</h1>
+                    <span class="uo-section__version">v{{ project.version }}</span>
+                </header>
+                <div class="uo-section__content">
+                    <p class="uo-section__disp">{{ project.disp }}</p>
+                    <p class="uo-section__tags">{{ project.tags }}</p>
+                    <p class="uo-section__actions">
+                        <a class="uo-section__action" data-preview-open="true">Preview</a>
+                        <a class="uo-section__action" target="_blank" href="{{ project.refer }}">Reference</a>
+                    </p>
+                </div>
+                <footer class="uo-section__footer">
+                    <a class="uo-section__source" target="_blank" href="https://github.com/dhamothy/uiout/tree/master/project/{{ project.url }}">Download for free</a>
+                </footer>
+            </div>
+        </div>
+        <div class="uo-section__col">
+            <div class="uo-section__project" data-preview-open="true">
+                <div class="uo-section__preview" data-preview-frame="true"><iframe class="uo-section__frame" src="project/{{ project.url }}/index.html"></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+<div class="uo-section__close" data-preview-close="true">Close</div>

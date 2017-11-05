@@ -1,0 +1,17 @@
+<aside class="fw-wrapper__aside">
+    <div class="fw-wrapper__nav">
+        <nav class="fw-nav fw-nav--right">
+        	{% for fd in site.data.fw.comp %}
+			{% assign fwd = {{fd}} %}
+			{% for fw in site.data[fwd] %}
+            <div class="fw-nav__list">
+                <div class="fw-nav__title">{{ fw.title }}</div>
+                {% for fw_type in fw.type %}
+                <a class="fw-nav__item">{{ fw_type.name }}</a>
+                {% endfor %}
+            </div>
+            {% endfor %}
+			{% endfor %}
+        </nav>
+    </div>
+</aside>
