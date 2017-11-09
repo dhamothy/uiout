@@ -1,3 +1,10 @@
-{
-  "comp" : ["input","button"]
-}
+[
+    {
+        "title": "Module",
+        "comp" : ["input","button"]
+    },
+    {
+        "title": "view",
+        "comp" : ["button","input"]
+    }
+]

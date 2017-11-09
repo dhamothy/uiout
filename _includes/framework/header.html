@@ -4,15 +4,14 @@
     </div>
     <div class="fw-wrapper__nav">
         <nav class="fw-nav">
-            {% for fd in site.data.fw.comp %}
-            {% assign fwd = {{fd}} %}            
+            {% for dataFw in site.data.fw %}
             <div class="fw-nav__list">
-                <div class="fw-nav__title">Module</div>
-                {% for fw in site.data[fwd] %}
-                <a class="fw-nav__item">{{ fw.title }}</a>
-                {% endfor %}    
+                <div class="fw-nav__title">{{dataFw.title}}</div>
+                {% for comp in dataFw.comp %}
+                <a class="fw-nav__item">{{ comp }}</a>
+                {% endfor %}
             </div>
-            {% endfor %}            
+            {% endfor %}
         </nav>
     </div>
 </header>

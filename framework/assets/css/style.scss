@@ -41,16 +41,21 @@ code{
 
 	&__{
 		&container{
-			min-height: 100vh;
+			height: 100vh;
 			display: flex;
+			overflow: hidden;
 		}
 		&header,
 		&aside{
-			background: $accent_fill;
-			flex-basis: 180px;
+			background: $accent_fill;			
+			flex: 0 0 180px;
+			height: 100vh;
+			overflow-y: auto;
 		}
 		&main{
 			flex: 1;
+			height: 100vh;
+			overflow-y: auto;
 		}
 		&header{
 
