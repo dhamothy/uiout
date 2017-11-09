@@ -1,18 +1,17 @@
 {% for dataFw in site.data.fw %}
-{% assign dataComp = dataFw.comp %}
-{% for comp in dataComp %}
-{% assign fwc = {{comp}}%}
-{% for fw in site.data[fwc] %}
+{% for dataFwComp in dataFw.comp %}
+{% assign fwComp = {{dataFwComp}}%}
+{% for comp in site.data[fwComp] %}
 <section class="fw-section">
     <header class="fw-section__header">
-        <h1 class="fw-section__title">{{ fw.title }}</h1>
-        <p class="fw-section__disp"></p>
+        <h1 class="fw-section__title">{{ comp.title }}</h1>
+        <p class="fw-section__disp">{{ comp.disp }}</p>
     </header>
     <div class="fw-section__content">
-        {% for fwType in fw.type %}
+        {% for compType in comp.type %}
         <div class="fw-section__demo" fw-demo="true">
-            <h2 class="fw-section__heading" fw-demo-trigger="true">{{ fwType.name }}</h2>
-            <div class="fw-section__preview" fw-demo-preview="true">{{ fwType.html }}</div>
+            <h2 class="fw-section__heading" fw-demo-trigger="true">{{ compType.name }}</h2>
+            <div class="fw-section__preview" fw-demo-preview="true">{{ compType.html }}</div>
             <div class="fw-section__code" fw-demo-code="true"></div>
         </div>
         {% endfor %}

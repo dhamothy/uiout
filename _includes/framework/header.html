@@ -7,8 +7,8 @@
             {% for dataFw in site.data.fw %}
             <div class="fw-nav__list">
                 <div class="fw-nav__title">{{dataFw.title}}</div>
-                {% for comp in dataFw.comp %}
-                <a class="fw-nav__item">{{ comp }}</a>
+                {% for dataFwComp in dataFw.comp %}
+                <a class="fw-nav__item">{{ dataFwComp }}</a>
                 {% endfor %}
             </div>
             {% endfor %}
