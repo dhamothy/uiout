@@ -1,7 +1,7 @@
 [
     {
         "title": "Button",
-        "disp": "Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "disp": "To create a Button, add the <code>ui-btn</code> classname to any <code>a</code> or <code>button</code> element.",
         "type": [
             {
                 "name": "Normal button",
@@ -14,6 +14,7 @@
             },
             {
                 "name": "Disabled button",
+                "caption": 'To mark a button as disabled, add the "disabled" attribute directly to your button.',
                 "html": '<button disabled="disabled" class="ui-btn ui-btn--base">Base</button><!---->
                 <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><!---->
                 <button disabled="disabled" class="ui-btn ui-btn--info">Info</button><!---->

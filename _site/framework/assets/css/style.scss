@@ -22,7 +22,12 @@ $muted_fill: 					#e0e0e0;
 //--------------------------------------------------------------------------------------------
 // layout
 //--------------------------------------------------------------------------------------------
-$header_gutter:					15px;
+$header_gutter:					12px;
+
+$section_gutter_st: 			24px;
+$section_gutter_lg: 			60px;
+
+$mq_lg: 						1000px;
 
 //============================================================================================
 // SELECTOR
@@ -58,22 +63,32 @@ code{
 			overflow-y: auto;
 		}
 		&header{
-
+			display: flex;
+			flex-direction: column;
+		}
+		&brand,
+		&source{
+			flex: 0 0 auto;
 		}
 		&nav{
-			padding: 9px 0 30px;
+			padding: 8px 0 32px;
+			flex: 1 1 auto;
+			overflow-y: auto;
+		}
+		&source{
+			padding: 12px $header_gutter;
 		}
 	}
 }
 #{$prefix}brand{
-	padding: 15px $header_gutter;
+	padding: 12px $header_gutter;
 	display: block;
 	font-size: 18px;
 
 	&__{
 		&logo{
-			width: 30px;
-			height: 30px;
+			width: 32px;
+			height: 32px;
 			vertical-align: middle;
 			margin-right: 9px;
 		}
@@ -86,15 +101,15 @@ code{
 			text-transform: uppercase;
 			font-size: 10px;
 			font-weight: bold;
-			margin-bottom: 6px;
+			margin-bottom: 4px;
 		}
 		&list{
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 		}
 		&item{
 			display: block;
 			color: $accent_text;
-			padding: 6px $header_gutter 6px ($header_gutter + 12px);
+			padding: 4px $header_gutter 4px ($header_gutter + 8px);
 			border-right: 3px solid transparent;
 			text-transform: capitalize;
 
@@ -107,7 +122,7 @@ code{
 	}
 	&--{
 		&right{
-			padding-top: 15px;
+			padding-top: 12px;
 
 			#{$prefix}nav{
 				&__{
@@ -125,28 +140,40 @@ code{
 		}
 	}
 }
+#{$prefix}source{
+	border-radius: 2px;
+	padding: 4px 12px;
+	border: 1px solid;
+	display: block;
+	text-align: center;
+	background-color: white;
+
+	& ~ &{
+		margin-top: 8px;
+	}
+}
 #{$prefix}section{
 	&s{
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: $section_gutter_st;
+		padding-right: $section_gutter_st;
 
-		@media (min-width: 1000px){
-			padding-left: 60px;
-			padding-right: 60px;
+		@media (min-width: $mq_lg){
+			padding-left: $section_gutter_lg;
+			padding-right: $section_gutter_lg;
 		}
 	}
 	&{
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: $section_gutter_st;
+		padding-bottom: $section_gutter_st;
 
-		@media (min-width: 1000px){
-			padding-top: 60px;
-			padding-bottom: 60px;
+		@media (min-width: $mq_lg){
+			padding-top: $section_gutter_lg;
+			padding-bottom: $section_gutter_lg;
 		}
 	}
 	&__{
 		&header{
-			margin-bottom: 30px;
+			margin-bottom: 24px;
 			padding-left: 12px;
 			border-left: 3px solid $color_primary;
 		}
@@ -161,24 +188,50 @@ code{
 		}
 		&demo{
 			& ~ &{
-				margin-top: 30px;
+				margin-top: 24px;
 			}
 		}
 		&heading{
 			font-size: 18px;
-			margin-bottom: 9px;
+			margin-bottom: 8px;
 		}
 		&caption{
 			color: $accent_text;
 		}
 		&code{
-			margin-top: 15px;
+			margin-top: 16px;
 			white-space: pre-line;
 			background-color: $accent_fill;
-			padding: 9px 15px;
+			padding: 8px 16px;
 			border-radius: 2px;
 			max-height: 80vh;
 			overflow: auto;
+		}
+		&preview{
+			> [class*="ui-"]{
+				margin: 4px;
+			}
+		}
+	}
+}
+#{$prefix}footer{
+	background-color: $accent_fill;
+	color: $accent_text;
+	font-size: 12px;
+	padding: 12px $section_gutter_st;
+	display: flex;	
+	justify-content: space-between;
+
+	@media (min-width: $mq_lg){
+		padding-left: $section_gutter_lg;
+		padding-right: $section_gutter_lg;
+	}
+	a{
+		border-bottom: 1px dotted;
+	}
+	&__{
+		&nav{
+			padding: 4px 0;
 		}
 	}
 }

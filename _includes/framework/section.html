@@ -1,22 +1,27 @@
-{% for dataFw in site.data.fw %}
-{% for dataFwComp in dataFw.comp %}
-{% assign fwComp = {{dataFwComp}}%}
-{% for comp in site.data[fwComp] %}
-<section class="fw-section">
-    <header class="fw-section__header">
-        <h1 class="fw-section__title">{{ comp.title }}</h1>
-        <p class="fw-section__disp">{{ comp.disp }}</p>
-    </header>
-    <div class="fw-section__content">
-        {% for compType in comp.type %}
-        <div class="fw-section__demo" fw-demo="true">
-            <h2 class="fw-section__heading" fw-demo-trigger="true">{{ compType.name }}</h2>
-            <div class="fw-section__preview" fw-demo-preview="true">{{ compType.html }}</div>
-            <div class="fw-section__code" fw-demo-code="true"></div>
+<div class="fw-sections">
+    {% for dataFw in site.data.fw %}
+    {% for dataFwComp in dataFw.comp %}
+    {% assign fwComp = {{dataFwComp}}%}
+    {% for comp in site.data[fwComp] %}
+    <section class="fw-section">
+        <header class="fw-section__header">
+            <h1 class="fw-section__title">{{ comp.title }}</h1>
+            <p class="fw-section__disp">{{ comp.disp }}</p>
+        </header>
+        <div class="fw-section__content">
+            {% for compType in comp.type %}
+            <div class="fw-section__demo" fw-demo="true">
+                <h2 class="fw-section__heading" fw-demo-trigger="true">{{ compType.name }}</h2>
+                {% if compType.caption != null %}
+                <p class="fw-section__caption" fw-demo-trigger="true">{{ compType.caption }}</p>
+                {% endif %}
+                <div class="fw-section__preview" fw-demo-preview="true">{{ compType.html }}</div>
+                <div class="fw-section__code" fw-demo-code="true"></div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>
-</section>
-{% endfor %}
-{% endfor %}
-{% endfor %}
+    </section>
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+</div>

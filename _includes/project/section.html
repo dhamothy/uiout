@@ -1,3 +1,4 @@
+<div class="uo-sections">
 {% for project in site.data.project reversed %}
 {% capture thecycle %}{% cycle 'uo-section--invert', '' %}{% endcapture %}
 <section class="uo-section {{ thecycle }}" data-preview-project="true" >
@@ -31,3 +32,4 @@
 </section>
 {% endfor %}
 <div class="uo-section__close" data-preview-close="true">Close</div>
+</div>
