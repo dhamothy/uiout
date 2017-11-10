@@ -5,20 +5,20 @@
         "type": [
             {
                 "name": "Normal input",
-                "html": '<button class="ui-btn ui-btn--base">Base</button>
-                <button class="ui-btn ui-btn--primary">Primary</button>
-                <button class="ui-btn ui-btn--info">Info</button>
-                <button class="ui-btn ui-btn--success">Success</button>
-                <button class="ui-btn ui-btn--danger">Danger</button>
+                "html": '<button class="ui-btn ui-btn--base">Base</button><!---->
+                <button class="ui-btn ui-btn--primary">Primary</button><!---->
+                <button class="ui-btn ui-btn--info">Info</button><!---->
+                <button class="ui-btn ui-btn--success">Success</button><!---->
+                <button class="ui-btn ui-btn--danger">Danger</button><!---->
                 <button class="ui-btn ui-btn--warn">Warn</button>'
             },
             {
                 "name": "Disabled input",
-                "html": '<button disabled="disabled" class="ui-btn ui-btn--base">Base</button>
-                <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button>
-                <button disabled="disabled" class="ui-btn ui-btn--info">Info</button>
-                <button disabled="disabled" class="ui-btn ui-btn--success">Success</button>
-                <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button>
+                "html": '<button disabled="disabled" class="ui-btn ui-btn--base">Base</button><!---->
+                <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><!---->
+                <button disabled="disabled" class="ui-btn ui-btn--info">Info</button><!---->
+                <button disabled="disabled" class="ui-btn ui-btn--success">Success</button><!---->
+                <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><!---->
                 <button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button>'
             }
         ]

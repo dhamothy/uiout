@@ -96,6 +96,7 @@ code{
 			color: $accent_text;
 			padding: 6px $header_gutter 6px ($header_gutter + 12px);
 			border-right: 3px solid transparent;
+			text-transform: capitalize;
 
 			&[navActive]{
 				color: $base_text;
