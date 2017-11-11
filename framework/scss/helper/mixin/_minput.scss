@@ -1,0 +1,9 @@
+@mixin ui-input(){
+	background-color: $input_fill;
+	color: $input_text;
+	border: 1px solid $input_stroke;
+	position: relative;
+    font-size: $input_size;
+    border-radius: $input_radius;
+    box-shadow: $input_shadow;
+}

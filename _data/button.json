@@ -1,26 +1,30 @@
 [
     {
-        "title": "Button",
-        "disp": "To create a Button, add the <code>ui-btn</code> classname to any <code>a</code> or <code>button</code> element.",
+        "title": "button",
+        "disp": "To create a Button, add the <code>ui-btn</code> classname to any <code><<b>a</b>></code> or <code><<b>button</b>></code> element.",
         "type": [
             {
-                "name": "Normal button",
-                "html": '<button class="ui-btn ui-btn--base">Base</button><!---->
-                <button class="ui-btn ui-btn--primary">Primary</button><!---->
-                <button class="ui-btn ui-btn--info">Info</button><!---->
-                <button class="ui-btn ui-btn--success">Success</button><!---->
-                <button class="ui-btn ui-btn--danger">Danger</button><!---->
-                <button class="ui-btn ui-btn--warn">Warn</button>'
+                "name": "normal",
+                "html": [
+                    '<button class="ui-btn ui-btn--base">Base</button>',
+                    '<button class="ui-btn ui-btn--primary">Primary</button>',
+                    '<button class="ui-btn ui-btn--info">Info</button>',
+                    '<button class="ui-btn ui-btn--success">Success</button>',
+                    '<button class="ui-btn ui-btn--danger">Danger</button>',
+                    '<button class="ui-btn ui-btn--warn">Warn</button>'
+                ]
             },
             {
-                "name": "Disabled button",
-                "caption": 'To mark a button as disabled, add the "disabled" attribute directly to your button.',
-                "html": '<button disabled="disabled" class="ui-btn ui-btn--base">Base</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--info">Info</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--success">Success</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button>'
+                "name": "disabled",
+                "caption": "To mark a button as disabled, add the <code>ui-btn--disabled</code> classname alongside <code>ui-btn</code>. Alternatively, add the <code>disabled</code> attribute directly to your button.",
+                "html": [
+                    '<button disabled="disabled" class="ui-btn ui-btn--base">Base</button>',
+                    '<button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button>',
+                    '<button disabled="disabled" class="ui-btn ui-btn--info">Info</button>',
+                    '<button disabled="disabled" class="ui-btn ui-btn--success">Success</button>',
+                    '<button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button>',
+                    '<button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button>'
+                ]
             }
         ]
     }

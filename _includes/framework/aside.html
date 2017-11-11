@@ -7,9 +7,11 @@
             {% assign fwc = {{comp}}%}
             {% for fw in site.data[fwc] %}
             <div class="fw-nav__list">
-                <div class="fw-nav__title">{{ fw.title }}</div>
+                <a class="fw-nav__title" href="#{{ fw.title }}">{{ fw.title | upcase }}</a>
                 {% for fwType in fw.type %}
-                <a class="fw-nav__item">{{ fwType.name }}</a>
+                {% if fwType.name != null %}
+                <a class="fw-nav__item" href="#{{ fw.title }}-{{ fwType.name }}">{{ fwType.name | capitalize }}</a>
+                {% endif %}
                 {% endfor %}
             </div>
             {% endfor %}

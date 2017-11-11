@@ -22,20 +22,26 @@
         <nav class="fw-nav">
             
             <div class="fw-nav__list">
-                <div class="fw-nav__title">Module</div>
+                <div class="fw-nav__title">MODULE</div>
                 
-                <a class="fw-nav__item">input</a>
+                <a class="fw-nav__item" href="#button">Button</a>
                 
-                <a class="fw-nav__item">button</a>
+                <a class="fw-nav__item" href="#input">Input</a>
+                
+                <a class="fw-nav__item" href="#checkbox">Checkbox</a>
+                
+                <a class="fw-nav__item" href="#radio">Radio</a>
+                
+                <a class="fw-nav__item" href="#form">Form</a>
                 
             </div>
             
             <div class="fw-nav__list">
-                <div class="fw-nav__title">view</div>
+                <div class="fw-nav__title">VIEW</div>
                 
-                <a class="fw-nav__item">button</a>
+                <a class="fw-nav__item" href="#button">Button</a>
                 
-                <a class="fw-nav__item">input</a>
+                <a class="fw-nav__item" href="#input">Input</a>
                 
             </div>
             
@@ -53,25 +59,43 @@
     
     
     
-    <section class="fw-section">
+    <section class="fw-section" id="button">
         <header class="fw-section__header">
-            <h1 class="fw-section__title">Input</h1>
-            <p class="fw-section__disp">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <h1 class="fw-section__title">BUTTON</h1>
+            <p class="fw-section__disp">To create a Button, add the <code>ui-btn</code> classname to any <code><<b>a</b>></code> or <code><<b>button</b>></code> element.</p>
         </header>
         <div class="fw-section__content">
             
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">Normal input</h2>
+            <div class="fw-section__demo" fw-demo="true" id="button-normal">
                 
-                <div class="fw-section__preview" fw-demo-preview="true"><button class="ui-btn ui-btn--base">Base</button><!----> <button class="ui-btn ui-btn--warn">Warn</button></div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+                <h2 class="fw-section__heading">Normal</h2>
+                
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><button class="ui-btn ui-btn--base">Base</button><button class="ui-btn ui-btn--primary">Primary</button><button class="ui-btn ui-btn--info">Info</button><button class="ui-btn ui-btn--success">Success</button><button class="ui-btn ui-btn--danger">Danger</button><button class="ui-btn ui-btn--warn">Warn</button></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--base"</span><span class="nt">&gt;</span>Base<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--warn"</span><span class="nt">&gt;</span>Warn<span class="nt">&lt;/button&gt;</span></code></pre></figure></div>
             </div>
             
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">Disabled input</h2>
+            <div class="fw-section__demo" fw-demo="true" id="button-disabled">
                 
-                <div class="fw-section__preview" fw-demo-preview="true"><button disabled="disabled" class="ui-btn ui-btn--base">Base</button><!----> <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><!----> <button disabled="disabled" class="ui-btn ui-btn--info">Info</button><!----> <button disabled="disabled" class="ui-btn ui-btn--success">Success</button><!----> <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><!----> <button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button></div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+                <h2 class="fw-section__heading">Disabled</h2>
+                
+                
+                <p class="fw-section__caption">To mark a button as disabled, add the <code>ui-btn--disabled</code> classname alongside <code>ui-btn</code>. Alternatively, add the <code>disabled</code> attribute directly to your button.</p>
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><button disabled="disabled" class="ui-btn ui-btn--base">Base</button><button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><button disabled="disabled" class="ui-btn ui-btn--info">Info</button><button disabled="disabled" class="ui-btn ui-btn--success">Success</button><button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--base"</span><span class="nt">&gt;</span>Base<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--warn"</span><span class="nt">&gt;</span>Warn<span class="nt">&lt;/button&gt;</span></code></pre></figure></div>
             </div>
             
         </div>
@@ -80,27 +104,126 @@
     
     
     
-    <section class="fw-section">
+    <section class="fw-section" id="input">
         <header class="fw-section__header">
-            <h1 class="fw-section__title">Button</h1>
-            <p class="fw-section__disp">To create a Button, add the <code>ui-btn</code> classname to any <code>a</code> or <code>button</code> element.</p>
+            <h1 class="fw-section__title">INPUT</h1>
+            <p class="fw-section__disp">To create a Input, add the <code>ui-input</code> classname to <code><<b>input</b>></code> and <code><<b>select</b>></code> element.</p>
         </header>
         <div class="fw-section__content">
             
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">Normal button</h2>
+            <div class="fw-section__demo" fw-demo="true" id="input-text">
                 
-                <div class="fw-section__preview" fw-demo-preview="true"><button class="ui-btn ui-btn--base">Base</button><!----> <button class="ui-btn ui-btn--primary">Primary</button><!----> <button class="ui-btn ui-btn--info">Info</button><!----> <button class="ui-btn ui-btn--success">Success</button><!----> <button class="ui-btn ui-btn--danger">Danger</button><!----> <button class="ui-btn ui-btn--warn">Warn</button></div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+                <h2 class="fw-section__heading">Text</h2>
+                
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><input class="ui-input" type="text"></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"ui-input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span></code></pre></figure></div>
             </div>
             
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">Disabled button</h2>
+            <div class="fw-section__demo" fw-demo="true" id="input-select">
                 
-                <p class="fw-section__caption" fw-demo-trigger="true">To mark a button as disabled, add the "disabled" attribute directly to your button.</p>
+                <h2 class="fw-section__heading">Select</h2>
                 
-                <div class="fw-section__preview" fw-demo-preview="true"><button disabled="disabled" class="ui-btn ui-btn--base">Base</button><!----> <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><!----> <button disabled="disabled" class="ui-btn ui-btn--info">Info</button><!----> <button disabled="disabled" class="ui-btn ui-btn--success">Success</button><!----> <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><!----> <button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button></div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><select class="ui-input">   <option>Developer</option>   <option>Designer</option></select></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"ui-input"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;option&gt;</span>Developer<span class="nt">&lt;/option&gt;</span>
+   <span class="nt">&lt;option&gt;</span>Designer<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span></code></pre></figure></div>
+            </div>
+            
+            <div class="fw-section__demo" fw-demo="true" id="input-textarea">
+                
+                <h2 class="fw-section__heading">Textarea</h2>
+                
+                
+                <p class="fw-section__caption">To create a Textarea, add the <code>ui-textarea</code> classname to <code><<b>textarea</b>></code> element.</p>
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><textarea class="ui-textarea" rows="3" cols="50"></textarea></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"ui-textarea"</span> <span class="na">rows=</span><span class="s">"3"</span> <span class="na">cols=</span><span class="s">"50"</span><span class="nt">&gt;&lt;/textarea&gt;</span></code></pre></figure></div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    
+    
+    <section class="fw-section" id="checkbox">
+        <header class="fw-section__header">
+            <h1 class="fw-section__title">CHECKBOX</h1>
+            <p class="fw-section__disp"></p>
+        </header>
+        <div class="fw-section__content">
+            
+            <div class="fw-section__demo" fw-demo="true" id="checkbox-">
+                
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><label class="ui-checkbox">   <input type="checkbox" class="ui-checkbox__element"> Developer</label><label class="ui-checkbox">   <input type="checkbox" class="ui-checkbox__element"> Designer</label></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-checkbox"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"ui-checkbox__element"</span><span class="nt">&gt;</span> Developer
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-checkbox"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"ui-checkbox__element"</span><span class="nt">&gt;</span> Designer
+<span class="nt">&lt;/label&gt;</span></code></pre></figure></div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    
+    
+    <section class="fw-section" id="radio">
+        <header class="fw-section__header">
+            <h1 class="fw-section__title">RADIO</h1>
+            <p class="fw-section__disp"></p>
+        </header>
+        <div class="fw-section__content">
+            
+            <div class="fw-section__demo" fw-demo="true" id="radio-">
+                
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><label class="ui-radio">   <input type="radio" class="ui-radio__element" name="work" value="developer"> Developer</label><label class="ui-radio">   <input type="radio" class="ui-radio__element" name="work" value="designer"> Designer</label></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-radio"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"ui-radio__element"</span> <span class="na">name=</span><span class="s">"work"</span> <span class="na">value=</span><span class="s">"developer"</span><span class="nt">&gt;</span> Developer
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-radio"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"ui-radio__element"</span> <span class="na">name=</span><span class="s">"work"</span> <span class="na">value=</span><span class="s">"designer"</span><span class="nt">&gt;</span> Designer
+<span class="nt">&lt;/label&gt;</span></code></pre></figure></div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    
+    
+    <section class="fw-section" id="form">
+        <header class="fw-section__header">
+            <h1 class="fw-section__title">FORM</h1>
+            <p class="fw-section__disp">To create a Input, add the <code>ui-input</code> classname to <code><<b>input</b>></code> and <code><<b>select</b>></code> element.</p>
+        </header>
+        <div class="fw-section__content">
+            
+            <div class="fw-section__demo" fw-demo="true" id="form-">
+                
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><form class="ui-form">   <label class="ui-form__field">       <span class="ui-form__label">User Name</span>       <input class="ui-form__input" type="text">       <span class="ui-form__error"></span>       <span class="ui-form__help">Your mail id or mobile number</span>   </label></form></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"ui-form"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-form__field"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ui-form__label"</span><span class="nt">&gt;</span>User Name<span class="nt">&lt;/span&gt;</span>
+       <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"ui-form__input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ui-form__error"</span><span class="nt">&gt;&lt;/span&gt;</span>
+       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ui-form__help"</span><span class="nt">&gt;</span>Your mail id or mobile number<span class="nt">&lt;/span&gt;</span>
+   <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></figure></div>
             </div>
             
         </div>
@@ -111,27 +234,43 @@
     
     
     
-    <section class="fw-section">
+    <section class="fw-section" id="button">
         <header class="fw-section__header">
-            <h1 class="fw-section__title">Button</h1>
-            <p class="fw-section__disp">To create a Button, add the <code>ui-btn</code> classname to any <code>a</code> or <code>button</code> element.</p>
+            <h1 class="fw-section__title">BUTTON</h1>
+            <p class="fw-section__disp">To create a Button, add the <code>ui-btn</code> classname to any <code><<b>a</b>></code> or <code><<b>button</b>></code> element.</p>
         </header>
         <div class="fw-section__content">
             
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">Normal button</h2>
+            <div class="fw-section__demo" fw-demo="true" id="button-normal">
                 
-                <div class="fw-section__preview" fw-demo-preview="true"><button class="ui-btn ui-btn--base">Base</button><!----> <button class="ui-btn ui-btn--primary">Primary</button><!----> <button class="ui-btn ui-btn--info">Info</button><!----> <button class="ui-btn ui-btn--success">Success</button><!----> <button class="ui-btn ui-btn--danger">Danger</button><!----> <button class="ui-btn ui-btn--warn">Warn</button></div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+                <h2 class="fw-section__heading">Normal</h2>
+                
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><button class="ui-btn ui-btn--base">Base</button><button class="ui-btn ui-btn--primary">Primary</button><button class="ui-btn ui-btn--info">Info</button><button class="ui-btn ui-btn--success">Success</button><button class="ui-btn ui-btn--danger">Danger</button><button class="ui-btn ui-btn--warn">Warn</button></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--base"</span><span class="nt">&gt;</span>Base<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--warn"</span><span class="nt">&gt;</span>Warn<span class="nt">&lt;/button&gt;</span></code></pre></figure></div>
             </div>
             
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">Disabled button</h2>
+            <div class="fw-section__demo" fw-demo="true" id="button-disabled">
                 
-                <p class="fw-section__caption" fw-demo-trigger="true">To mark a button as disabled, add the "disabled" attribute directly to your button.</p>
+                <h2 class="fw-section__heading">Disabled</h2>
                 
-                <div class="fw-section__preview" fw-demo-preview="true"><button disabled="disabled" class="ui-btn ui-btn--base">Base</button><!----> <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><!----> <button disabled="disabled" class="ui-btn ui-btn--info">Info</button><!----> <button disabled="disabled" class="ui-btn ui-btn--success">Success</button><!----> <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><!----> <button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button></div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+                
+                <p class="fw-section__caption">To mark a button as disabled, add the <code>ui-btn--disabled</code> classname alongside <code>ui-btn</code>. Alternatively, add the <code>disabled</code> attribute directly to your button.</p>
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><button disabled="disabled" class="ui-btn ui-btn--base">Base</button><button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><button disabled="disabled" class="ui-btn ui-btn--info">Info</button><button disabled="disabled" class="ui-btn ui-btn--success">Success</button><button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--base"</span><span class="nt">&gt;</span>Base<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn--warn"</span><span class="nt">&gt;</span>Warn<span class="nt">&lt;/button&gt;</span></code></pre></figure></div>
             </div>
             
         </div>
@@ -140,25 +279,46 @@
     
     
     
-    <section class="fw-section">
+    <section class="fw-section" id="input">
         <header class="fw-section__header">
-            <h1 class="fw-section__title">Input</h1>
-            <p class="fw-section__disp">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <h1 class="fw-section__title">INPUT</h1>
+            <p class="fw-section__disp">To create a Input, add the <code>ui-input</code> classname to <code><<b>input</b>></code> and <code><<b>select</b>></code> element.</p>
         </header>
         <div class="fw-section__content">
             
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">Normal input</h2>
+            <div class="fw-section__demo" fw-demo="true" id="input-text">
                 
-                <div class="fw-section__preview" fw-demo-preview="true"><button class="ui-btn ui-btn--base">Base</button><!----> <button class="ui-btn ui-btn--warn">Warn</button></div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+                <h2 class="fw-section__heading">Text</h2>
+                
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><input class="ui-input" type="text"></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"ui-input"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span></code></pre></figure></div>
             </div>
             
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">Disabled input</h2>
+            <div class="fw-section__demo" fw-demo="true" id="input-select">
                 
-                <div class="fw-section__preview" fw-demo-preview="true"><button disabled="disabled" class="ui-btn ui-btn--base">Base</button><!----> <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><!----> <button disabled="disabled" class="ui-btn ui-btn--info">Info</button><!----> <button disabled="disabled" class="ui-btn ui-btn--success">Success</button><!----> <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><!----> <button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button></div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+                <h2 class="fw-section__heading">Select</h2>
+                
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><select class="ui-input">   <option>Developer</option>   <option>Designer</option></select></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"ui-input"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;option&gt;</span>Developer<span class="nt">&lt;/option&gt;</span>
+   <span class="nt">&lt;option&gt;</span>Designer<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span></code></pre></figure></div>
+            </div>
+            
+            <div class="fw-section__demo" fw-demo="true" id="input-textarea">
+                
+                <h2 class="fw-section__heading">Textarea</h2>
+                
+                
+                <p class="fw-section__caption">To create a Textarea, add the <code>ui-textarea</code> classname to <code><<b>textarea</b>></code> element.</p>
+                
+                <div class="fw-section__preview" fw-demo-preview="true"><textarea class="ui-textarea" rows="3" cols="50"></textarea></div>
+<div class="fw-section__code" >
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"ui-textarea"</span> <span class="na">rows=</span><span class="s">"3"</span> <span class="na">cols=</span><span class="s">"50"</span><span class="nt">&gt;&lt;/textarea&gt;</span></code></pre></figure></div>
             </div>
             
         </div>
@@ -187,38 +347,15 @@
             
             
             <div class="fw-nav__list">
-                <div class="fw-nav__title">Input</div>
+                <a class="fw-nav__title" href="#button">BUTTON</a>
                 
-                <a class="fw-nav__item">Normal input</a>
                 
-                <a class="fw-nav__item">Disabled input</a>
+                <a class="fw-nav__item" href="#button-normal">Normal</a>
                 
-            </div>
-            
-			
-            
-            
-            <div class="fw-nav__list">
-                <div class="fw-nav__title">Button</div>
                 
-                <a class="fw-nav__item">Normal button</a>
                 
-                <a class="fw-nav__item">Disabled button</a>
+                <a class="fw-nav__item" href="#button-disabled">Disabled</a>
                 
-            </div>
-            
-			
-            
-            
-            
-            
-            
-            <div class="fw-nav__list">
-                <div class="fw-nav__title">Button</div>
-                
-                <a class="fw-nav__item">Normal button</a>
-                
-                <a class="fw-nav__item">Disabled button</a>
                 
             </div>
             
@@ -226,11 +363,88 @@
             
             
             <div class="fw-nav__list">
-                <div class="fw-nav__title">Input</div>
+                <a class="fw-nav__title" href="#input">INPUT</a>
                 
-                <a class="fw-nav__item">Normal input</a>
                 
-                <a class="fw-nav__item">Disabled input</a>
+                <a class="fw-nav__item" href="#input-text">Text</a>
+                
+                
+                
+                <a class="fw-nav__item" href="#input-select">Select</a>
+                
+                
+                
+                <a class="fw-nav__item" href="#input-textarea">Textarea</a>
+                
+                
+            </div>
+            
+			
+            
+            
+            <div class="fw-nav__list">
+                <a class="fw-nav__title" href="#checkbox">CHECKBOX</a>
+                
+                
+                
+            </div>
+            
+			
+            
+            
+            <div class="fw-nav__list">
+                <a class="fw-nav__title" href="#radio">RADIO</a>
+                
+                
+                
+            </div>
+            
+			
+            
+            
+            <div class="fw-nav__list">
+                <a class="fw-nav__title" href="#form">FORM</a>
+                
+                
+                
+            </div>
+            
+			
+            
+            
+            
+            
+            
+            <div class="fw-nav__list">
+                <a class="fw-nav__title" href="#button">BUTTON</a>
+                
+                
+                <a class="fw-nav__item" href="#button-normal">Normal</a>
+                
+                
+                
+                <a class="fw-nav__item" href="#button-disabled">Disabled</a>
+                
+                
+            </div>
+            
+			
+            
+            
+            <div class="fw-nav__list">
+                <a class="fw-nav__title" href="#input">INPUT</a>
+                
+                
+                <a class="fw-nav__item" href="#input-text">Text</a>
+                
+                
+                
+                <a class="fw-nav__item" href="#input-select">Select</a>
+                
+                
+                
+                <a class="fw-nav__item" href="#input-textarea">Textarea</a>
+                
                 
             </div>
             

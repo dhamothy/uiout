@@ -10,7 +10,7 @@ $color_primary                 	: #05f; //blue
 $color_info						: #0af;	//light blue
 $color_success					: #393;	//green
 $color_danger					: #e50;	//red
-$color_warn						: #e90;	//warn
+$color_warn						: #ea0;	//warn
 
 //text and fill
 //base
@@ -88,6 +88,19 @@ $container_width				: $container_inner + ($container_gutter * 2);
 //	MODULE
 //==============================================================================
 //------------------------------------------------------------------------------
+//	input
+//------------------------------------------------------------------------------
+$input_shadow					: inset 0 0 2px rgba(0,0,0,.2);
+$input_gutter					: 12px;
+$input_height					: 36px;
+$input_radius					: 2px;
+$input_size						: $size_st;
+
+$input_fill						: $base_fill;
+$input_text						: $base_text;
+$input_stroke					: $base_stroke;
+
+//------------------------------------------------------------------------------
 //	button
 //------------------------------------------------------------------------------
 $button_shadow					: $shadow_dp1;
@@ -98,7 +111,7 @@ $button_size					: $size_st;
 
 //base color
 $button_base_text				: $base_text;
-$button_base_fill				: $color_white;
+$button_base_fill				: $base_fill;
 
 //primary
 $button_primary_fill			: $color_primary;

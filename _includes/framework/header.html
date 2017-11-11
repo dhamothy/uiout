@@ -6,9 +6,9 @@
         <nav class="fw-nav">
             {% for dataFw in site.data.fw %}
             <div class="fw-nav__list">
-                <div class="fw-nav__title">{{dataFw.title}}</div>
+                <div class="fw-nav__title">{{dataFw.title | upcase}}</div>
                 {% for dataFwComp in dataFw.comp %}
-                <a class="fw-nav__item">{{ dataFwComp }}</a>
+                <a class="fw-nav__item" href="#{{ dataFwComp }}">{{ dataFwComp | capitalize }}</a>
                 {% endfor %}
             </div>
             {% endfor %}

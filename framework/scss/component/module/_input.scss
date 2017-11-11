@@ -1,0 +1,10 @@
+#{$input}{
+	@include ui-input();
+	padding: 0 $input_gutter;
+    height: $input_height;
+    line-height: $input_height;
+}
+
+#{$textarea}{
+	@include ui-input();
+}

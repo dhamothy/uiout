@@ -1,0 +1,17 @@
+[
+    {
+        "title": "checkbox",
+        "type": [
+            {                
+                "html": [
+                    '<label class="ui-checkbox">',
+                    '   <input type="checkbox" class="ui-checkbox__element"> Developer',
+                    '</label>',
+                    '<label class="ui-checkbox">',
+                    '   <input type="checkbox" class="ui-checkbox__element"> Designer',
+                    '</label>'
+                ]
+            }
+        ]
+    }
+]

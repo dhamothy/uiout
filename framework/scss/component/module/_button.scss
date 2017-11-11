@@ -1,35 +1,37 @@
 #{$button}{
-	@include button();
-	// @include button-disabled();
+	@include ui-button();
 	
-	&--{
+	&#{$mod}{
 		&base{
-			@include button-state();
+			@include ui-button-state();
 		}
 		&primary{
-			@include button-state(
+			@include ui-button-state(
 		    $button_fill: $button_primary_fill,
 		    $button_text: $color_white);
 		}
 		&info{
-			@include button-state(
+			@include ui-button-state(
 		    $button_fill: $button_info_fill,
 		    $button_text: $color_white);
 		}
 		&success{
-			@include button-state(
+			@include ui-button-state(
 		    $button_fill: $button_success_fill,
 		    $button_text: $color_white);
 		}
 		&danger{
-			@include button-state(
+			@include ui-button-state(
 		    $button_fill: $button_danger_fill,
 		    $button_text: $color_white);
 		}
 		&warn{
-			@include button-state(
+			@include ui-button-state(
 		    $button_fill: $button_warn_fill,
 		    $button_text: $color_white);
+		}
+		&disabled{
+			@include ui-button-disabled();
 		}
 	}
 }

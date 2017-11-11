@@ -3,20 +3,25 @@
     {% for dataFwComp in dataFw.comp %}
     {% assign fwComp = {{dataFwComp}}%}
     {% for comp in site.data[fwComp] %}
-    <section class="fw-section">
+    <section class="fw-section" id="{{ comp.title }}">
         <header class="fw-section__header">
-            <h1 class="fw-section__title">{{ comp.title }}</h1>
+            <h1 class="fw-section__title">{{ comp.title | upcase }}</h1>
             <p class="fw-section__disp">{{ comp.disp }}</p>
         </header>
         <div class="fw-section__content">
             {% for compType in comp.type %}
-            <div class="fw-section__demo" fw-demo="true">
-                <h2 class="fw-section__heading" fw-demo-trigger="true">{{ compType.name }}</h2>
+            <div class="fw-section__demo" fw-demo="true" id="{{ comp.title }}-{{ compType.name }}">
+                {% if compType.name != null %}
+                <h2 class="fw-section__heading">{{ compType.name | capitalize }}</h2>
+                {% endif %}
                 {% if compType.caption != null %}
-                <p class="fw-section__caption" fw-demo-trigger="true">{{ compType.caption }}</p>
+                <p class="fw-section__caption">{{ compType.caption }}</p>
                 {% endif %}
                 <div class="fw-section__preview" fw-demo-preview="true">{{ compType.html }}</div>
-                <div class="fw-section__code" fw-demo-code="true"></div>
+<div class="fw-section__code" >
+{% highlight html %}
+{% for compHtml in compType.html %}{{ compHtml }}
+{% endfor %}{% endhighlight %}</div>
             </div>
             {% endfor %}
         </div>

@@ -1,21 +1,29 @@
 [
     {
-        "title": "Input",
-        "disp": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "title": "input",
+        "disp": "To create a Input, add the <code>ui-input</code> classname to <code><<b>input</b>></code> and <code><<b>select</b>></code> element.",
         "type": [
             {
-                "name": "Normal input",
-                "html": '<button class="ui-btn ui-btn--base">Base</button><!---->                
-                <button class="ui-btn ui-btn--warn">Warn</button>'
+                "name": "text",
+                "html": [
+                    '<input class="ui-input" type="text">'
+                ]
             },
             {
-                "name": "Disabled input",
-                "html": '<button disabled="disabled" class="ui-btn ui-btn--base">Base</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--primary">Primary</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--info">Info</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--success">Success</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--danger">Danger</button><!---->
-                <button disabled="disabled" class="ui-btn ui-btn--warn">Warn</button>'
+                "name": "select",
+                "html": [
+                    '<select class="ui-input">',
+                    '   <option>Developer</option>',
+                    '   <option>Designer</option>',
+                    '</select>'
+                ]
+            },
+            {
+                "name": "textarea",
+                "caption": "To create a Textarea, add the <code>ui-textarea</code> classname to <code><<b>textarea</b>></code> element.",
+                "html": [
+                    '<textarea class="ui-textarea" rows="3" cols="50"></textarea>'
+                ]
             }
         ]
     }

@@ -1,0 +1,17 @@
+[
+    {
+        "title": "radio",
+        "type": [
+            {                
+                "html": [
+                    '<label class="ui-radio">',
+                    '   <input type="radio" class="ui-radio__element" name="work" value="developer"> Developer',
+                    '</label>',
+                    '<label class="ui-radio">',
+                    '   <input type="radio" class="ui-radio__element" name="work" value="designer"> Designer',
+                    '</label>'
+                ]
+            }
+        ]
+    }
+]

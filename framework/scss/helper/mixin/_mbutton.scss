@@ -1,4 +1,4 @@
-@mixin button(){
+@mixin ui-button(){
     text-decoration: none!important;
     border-width: 0;
     display: inline-block;
@@ -12,14 +12,9 @@
     line-height: $button_height;
     border-radius: $button_radius;
     box-shadow: $button_shadow;
-
-    &[disabled]{
-        cursor: not-allowed;
-        box-shadow: $button_state_shadow;
-    }
 }
 
-@mixin button-state(
+@mixin ui-button-state(
     $button_fill: $button_base_fill,
     $button_text: $button_base_text
     ){
@@ -35,24 +30,18 @@
         box-shadow: $button_state_shadow;
     }
     &[disabled]{
-        // cursor: not-allowed;
+        cursor: not-allowed;
         background-color: lighten($button_fill,30%);
-        color: lighten($button_text,50%);
-        // box-shadow: $button_state_shadow;
+        color: lighten($button_text,50%); 
+        box-shadow: $button_state_shadow!important;       
     }
 }
 
-@mixin button-disabled(
+@mixin ui-button-disabled(
     $button_disabled_fill: $button_disabled_fill,
     $button_disabled_text: $button_disabled_text
     ){
-    &[disabled]{
-        // cursor: not-allowed;
-        // @if (lightness($button_disabled_fill)>50){
-            background-color: $button_disabled_fill!important;
-        // }
-
-        color: $button_disabled_text!important;
-        box-shadow: none;
-    }
+    background-color: $button_disabled_fill!important;
+    color: $button_disabled_text!important;
+    box-shadow: $button_state_shadow!important;
 }

@@ -1,0 +1,20 @@
+[
+    {
+        "title": "form",
+        "disp": "To create a Input, add the <code>ui-input</code> classname to <code><<b>input</b>></code> and <code><<b>select</b>></code> element.",
+        "type": [
+            {
+                "html": [
+                    '<form class="ui-form">',
+                    '   <label class="ui-form__field">',
+                    '       <span class="ui-form__label">User Name</span>',
+                    '       <input class="ui-form__input" type="text">',
+                    '       <span class="ui-form__error"></span>',
+                    '       <span class="ui-form__help">Your mail id or mobile number</span>',                
+                    '   </label>',
+                    '</form>'
+                ]
+            }
+        ]
+    }
+]

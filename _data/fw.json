@@ -1,7 +1,7 @@
 [
     {
-        "title": "Module",
-        "comp" : ["input","button"]
+        "title": "module",
+        "comp" : ["button","input","checkbox","radio","form"]
     },
     {
         "title": "view",
